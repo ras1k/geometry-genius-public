@@ -32,19 +32,19 @@
                             <img src="images/triangle.png" class="h-100 card-img-top img-fluid w-75 mx-auto p-3"
                                 alt="...">
                             <div class="card-body">
-                                <h5 class="card-title text-center">Triangle</h5>
+                                <h5 id="triangle-name" class="card-title text-center">Triangle</h5>
                                 <p class="card-text text-center">Area (A) = 0.5 * b * h</p>
                                 <div class="row row-cols-2 align-items-center justify-content-center">
                                     <div class="col row row-cols-2 justify-content-center align-items-center">
-                                        <input class="col form-control-sm" placeholder="b" style="border: 1px solid rgba(0, 0, 0, 0.295);" type="text">
+                                        <input id="triangle-input-b" class="col form-control-sm" placeholder="b" style="border: 1px solid rgba(0, 0, 0, 0.295);" type="number" min="0" oninput="validity.valid||(value='');">
                                         <p class="col" style="margin: 0 !important;">cm</p>
                                     </div>
                                     <div class="col row row-cols-2 justify-content-center align-items-center">
-                                        <input class="col form-control-sm" placeholder="h" style="border: 1px solid rgba(0, 0, 0, 0.295);" type="text">
+                                        <input id="triangle-input-h" class="col form-control-sm" placeholder="h" style="border: 1px solid rgba(0, 0, 0, 0.295);" type="number" min="0" oninput="validity.valid||(value='');">
                                         <p class="col" style="margin: 0 !important;">cm</p>
                                     </div>
                                 </div>
-                                <button type="button" class="btn btn-primary mt-3 w-100">Calculate</button>
+                                <button id="triangle-btn" type="button" class="btn btn-primary mt-3 w-100">Calculate</button>
                             </div>
                         </div>
                     </div>
@@ -53,19 +53,19 @@
                             <img src="images/rectangle.png" class="h-100 card-img-top img-fluid w-75 mx-auto p-3"
                                 alt="...">
                             <div class="card-body">
-                                <h5 class="card-title text-center">Ractangle</h5>
+                                <h5 id="rectangle-name" class="card-title text-center">Ractangle</h5>
                                 <p class="card-text text-center">Area (A) = w * i</p>
                                 <div class="row row-cols-2 align-items-center justify-content-center">
                                     <div class="col row row-cols-2 justify-content-center align-items-center">
-                                        <input class="col form-control-sm" placeholder="w" style="border: 1px solid rgba(0, 0, 0, 0.295);" type="text">
+                                        <input id="ractangle-input-w" class="col form-control-sm" placeholder="w" style="border: 1px solid rgba(0, 0, 0, 0.295);" type="number" min="0" oninput="validity.valid||(value='');">
                                         <p class="col" style="margin: 0 !important;">cm</p>
                                     </div>
                                     <div class="col row row-cols-2 justify-content-center align-items-center">
-                                        <input class="col form-control-sm" placeholder="i" style="border: 1px solid rgba(0, 0, 0, 0.295);" type="text">
+                                        <input id="ractangle-input-i" class="col form-control-sm" placeholder="i" style="border: 1px solid rgba(0, 0, 0, 0.295);" type="number" min="0" oninput="validity.valid||(value='');">
                                         <p class="col" style="margin: 0 !important;">cm</p>
                                     </div>
                                 </div>
-                                <button type="button" class="btn btn-primary mt-3 w-100">Calculate</button>
+                                <button id="rectangle-btn" type="button" class="btn btn-primary mt-3 w-100">Calculate</button>
                             </div>
                         </div>
                     </div>
@@ -160,9 +160,29 @@
                     <!-- <img src="..." class="card-img-top" alt="..."> -->
                     <div class="card-body">
                         <h5 class="card-title text-center"><u><b>Area Calculation</b></u></h5>
-                        <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                        <div class="overflow-x-auto">
+                            <table class="table w-100">
+                              <!-- head -->
+                              <thead>
+                                <tr>
+                                  <th> SL No. </th>
+                                  <th> Name </th>
+                                  <th> Sum </th>
+                                  <th> Button </th>
+                                </tr>
+                              </thead>
+                              <tbody id="tbl-container">
+                                <!-- row 1 -->
+                                <!-- <tr>
+                                  <th>1</th>
+                                  <td>Cy Ganderton</td>
+                                  <td>Quality Control Specialist</td>
+                                  <td>Blue</td>
+                                </tr> -->
+                               
+                              </tbody>
+                            </table>
+                          </div>
                     </div>
                 </div>
             </div>
