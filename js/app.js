@@ -1,3 +1,4 @@
+//function of dynamic table
 function displayData(triangleName, triangleArea){
     const tr = document.createElement('tr');
     tr.innerHTML = `
@@ -9,10 +10,13 @@ function displayData(triangleName, triangleArea){
     const tbl = document.getElementById('tbl-container')
     tbl.appendChild(tr);
 }
+
+//function of input remover
 function removeInput(inp1, inp2){
     inp1.value = '';
     inp2.value = '';
 }
+
 // Function to generate a random color
 function getRandomColor() {
     const letters = '0123456789ABCDEF';
@@ -22,6 +26,8 @@ function getRandomColor() {
     }
     return color;
 }
+
+//function of mouseover
 function color (elementId){
     const card = document.getElementById(elementId);
     card.addEventListener('mouseover', function(){
@@ -31,6 +37,7 @@ function color (elementId){
       card.style.backgroundColor = 'white';
     });
 }
+
 color('triangle-card');
 color('rectangle-card');
 color('parallelogram-card');
