@@ -7,7 +7,7 @@ function displayData(triangleName, triangleArea){
     <td>${triangleArea}<span> cm<sup>2</sup></span></td>
     <td><button class="btn btn-info">Convert To M<sup>2</sup></button></td>
     `;
-    const tbl = document.getElementById('tbl-container')
+    const tbl = document.getElementById('tbl-container');
     tbl.appendChild(tr);
 }
 
@@ -38,6 +38,7 @@ function color (elementId){
     });
 }
 
+//code for card mouseovers
 color('triangle-card');
 color('rectangle-card');
 color('parallelogram-card');
