@@ -74,19 +74,19 @@
                             <img src="images/parallelogram.png" class="h-100 card-img-top img-fluid w-75 mx-auto p-3"
                                 alt="...">
                             <div class="card-body">
-                                <h5 class="card-title text-center">Parallelogram</h5>
-                                <p class="card-text text-center">Area (A) = w * i</p>
+                                <h5 id="parallelogram-name" class="card-title text-center">Parallelogram</h5>
+                                <p class="card-text text-center">Area (A) = b * h</p>
                                 <div class="row row-cols-2 align-items-center justify-content-center">
                                     <div class="col row row-cols-2 justify-content-center align-items-center">
-                                        <input class="col form-control-sm" placeholder="w" style="border: 1px solid rgba(0, 0, 0, 0.295);" type="text">
+                                        <input id="parallelogram-input-b" class="col form-control-sm" placeholder="b" style="border: 1px solid rgba(0, 0, 0, 0.295);" type="number" min="0" oninput="validity.valid||(value='');">
                                         <p class="col" style="margin: 0 !important;">cm</p>
                                     </div>
                                     <div class="col row row-cols-2 justify-content-center align-items-center">
-                                        <input class="col form-control-sm" placeholder="i" style="border: 1px solid rgba(0, 0, 0, 0.295);" type="text">
+                                        <input id="parallelogram-input-h" class="col form-control-sm" placeholder="h" style="border: 1px solid rgba(0, 0, 0, 0.295);" type="number" min="0" oninput="validity.valid||(value='');">
                                         <p class="col" style="margin: 0 !important;">cm</p>
                                     </div>
                                 </div>
-                                <button type="button" class="btn btn-primary mt-3 w-100">Calculate</button>
+                                <button id="parallelogram-btn" type="button" class="btn btn-primary mt-3 w-100">Calculate</button>
                             </div>
                         </div>
                     </div>
@@ -95,19 +95,19 @@
                             <img src="images/rhombus.png" class="h-100 card-img-top img-fluid w-75 mx-auto p-3"
                                 alt="...">
                             <div class="card-body">
-                                <h5 class="card-title text-center">Rhombus</h5>
-                                <p class="card-text text-center">Area (A) = w * i</p>
+                                <h5 id="rhombus-name" class="card-title text-center">Rhombus</h5>
+                                <p class="card-text text-center">Area (A) = 0.5 * d1 * d2</p>
                                 <div class="row row-cols-2 align-items-center justify-content-center">
                                     <div class="col row row-cols-2 justify-content-center align-items-center">
-                                        <input class="col form-control-sm" placeholder="w" style="border: 1px solid rgba(0, 0, 0, 0.295);" type="text">
+                                        <input id="rhombus-input-d1" class="col form-control-sm" placeholder="d1" style="border: 1px solid rgba(0, 0, 0, 0.295);" type="number" min="0" oninput="validity.valid||(value='');">
                                         <p class="col" style="margin: 0 !important;">cm</p>
                                     </div>
                                     <div class="col row row-cols-2 justify-content-center align-items-center">
-                                        <input class="col form-control-sm" placeholder="i" style="border: 1px solid rgba(0, 0, 0, 0.295);" type="text">
+                                        <input id="rhombus-input-d2" class="col form-control-sm" placeholder="d2" style="border: 1px solid rgba(0, 0, 0, 0.295);" type="number" min="0" oninput="validity.valid||(value='');">
                                         <p class="col" style="margin: 0 !important;">cm</p>
                                     </div>
                                 </div>
-                                <button type="button" class="btn btn-primary mt-3 w-100">Calculate</button>
+                                <button id="rhombus-btn" type="button" class="btn btn-primary mt-3 w-100">Calculate</button>
                             </div>
                         </div>
                     </div>
@@ -120,11 +120,11 @@
                                 <p class="card-text text-center">Area (A) = w * i</p>
                                 <div class="row row-cols-2 align-items-center justify-content-center">
                                     <div class="col row row-cols-2 justify-content-center align-items-center">
-                                        <input class="col form-control-sm" placeholder="w" style="border: 1px solid rgba(0, 0, 0, 0.295);" type="text">
+                                        <input class="col form-control-sm" placeholder="w" style="border: 1px solid rgba(0, 0, 0, 0.295);" type="number" min="0" oninput="validity.valid||(value='');">
                                         <p class="col" style="margin: 0 !important;">cm</p>
                                     </div>
                                     <div class="col row row-cols-2 justify-content-center align-items-center">
-                                        <input class="col form-control-sm" placeholder="i" style="border: 1px solid rgba(0, 0, 0, 0.295);" type="text">
+                                        <input class="col form-control-sm" placeholder="i" style="border: 1px solid rgba(0, 0, 0, 0.295);" type="number" min="0" oninput="validity.valid||(value='');">
                                         <p class="col" style="margin: 0 !important;">cm</p>
                                     </div>
                                 </div>
@@ -141,11 +141,11 @@
                                 <p class="card-text text-center">Area (A) = w * i</p>
                                 <div class="row row-cols-2 align-items-center justify-content-center">
                                     <div class="col row row-cols-2 justify-content-center align-items-center">
-                                        <input class="col form-control-sm" placeholder="w" style="border: 1px solid rgba(0, 0, 0, 0.295);" type="text">
+                                        <input class="col form-control-sm" placeholder="w" style="border: 1px solid rgba(0, 0, 0, 0.295);" type="number" min="0" oninput="validity.valid||(value='');">
                                         <p class="col" style="margin: 0 !important;">cm</p>
                                     </div>
                                     <div class="col row row-cols-2 justify-content-center align-items-center">
-                                        <input class="col form-control-sm" placeholder="i" style="border: 1px solid rgba(0, 0, 0, 0.295);" type="text">
+                                        <input class="col form-control-sm" placeholder="i" style="border: 1px solid rgba(0, 0, 0, 0.295);" type="number" min="0" oninput="validity.valid||(value='');">
                                         <p class="col" style="margin: 0 !important;">cm</p>
                                     </div>
                                 </div>
