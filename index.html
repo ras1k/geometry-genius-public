@@ -18,7 +18,8 @@
                     Geometry Genius</a>
                 <form class="d-flex" role="search">
                     <!-- <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"> -->
-                    <button class="btn w-100 btn-success" type="submit">Blog</button>
+                    <!-- <button class="btn w-100 btn-success" type="submit">Blog</button> -->
+                    <a class="btn btn-success" target="_blank" href="blog.html">Blog</a>
                 </form>
             </div>
         </nav>
@@ -116,40 +117,40 @@
                             <img src="images/pentagon.png" class="h-100 card-img-top img-fluid w-75 mx-auto p-3"
                                 alt="...">
                             <div class="card-body">
-                                <h5 class="card-title text-center">Pentagon</h5>
-                                <p class="card-text text-center">Area (A) = w * i</p>
+                                <h5 id="pentagon-name" class="card-title text-center">Pentagon</h5>
+                                <p class="card-text text-center">Area (A) = 0.5 * p * b</p>
                                 <div class="row row-cols-2 align-items-center justify-content-center">
                                     <div class="col row row-cols-2 justify-content-center align-items-center">
-                                        <input class="col form-control-sm" placeholder="w" style="border: 1px solid rgba(0, 0, 0, 0.295);" type="number" min="0" oninput="validity.valid||(value='');">
+                                        <input id="pentagon-input-p" class="col form-control-sm" placeholder="p" style="border: 1px solid rgba(0, 0, 0, 0.295);" type="number" min="0" oninput="validity.valid||(value='');">
                                         <p class="col" style="margin: 0 !important;">cm</p>
                                     </div>
                                     <div class="col row row-cols-2 justify-content-center align-items-center">
-                                        <input class="col form-control-sm" placeholder="i" style="border: 1px solid rgba(0, 0, 0, 0.295);" type="number" min="0" oninput="validity.valid||(value='');">
+                                        <input id="pentagon-input-b" class="col form-control-sm" placeholder="b" style="border: 1px solid rgba(0, 0, 0, 0.295);" type="number" min="0" oninput="validity.valid||(value='');">
                                         <p class="col" style="margin: 0 !important;">cm</p>
                                     </div>
                                 </div>
-                                <button type="button" class="btn btn-primary mt-3 w-100">Calculate</button>
+                                <button id="pentagon-btn" type="button" class="btn btn-primary mt-3 w-100">Calculate</button>
                             </div>
                         </div>
-                    </div>
+                    </div>    
                     <div class="col">
                         <div class="card h-100">
                             <img src="images/ellipse.png" class="h-100 card-img-top img-fluid w-100 mx-auto p-3"
                                 alt="...">
                             <div class="card-body">
-                                <h5 class="card-title text-center">Ellipse</h5>
-                                <p class="card-text text-center">Area (A) = w * i</p>
+                                <h5 id="ellipse-name" class="card-title text-center">Ellipse</h5>
+                                <p class="card-text text-center">Area (A) =  πab</p>
                                 <div class="row row-cols-2 align-items-center justify-content-center">
                                     <div class="col row row-cols-2 justify-content-center align-items-center">
-                                        <input class="col form-control-sm" placeholder="w" style="border: 1px solid rgba(0, 0, 0, 0.295);" type="number" min="0" oninput="validity.valid||(value='');">
+                                        <input id="ellipse-input-a" class="col form-control-sm" placeholder="a" style="border: 1px solid rgba(0, 0, 0, 0.295);" type="number" min="0" oninput="validity.valid||(value='');">
                                         <p class="col" style="margin: 0 !important;">cm</p>
                                     </div>
                                     <div class="col row row-cols-2 justify-content-center align-items-center">
-                                        <input class="col form-control-sm" placeholder="i" style="border: 1px solid rgba(0, 0, 0, 0.295);" type="number" min="0" oninput="validity.valid||(value='');">
+                                        <input id="ellipse-input-b" class="col form-control-sm" placeholder="b" style="border: 1px solid rgba(0, 0, 0, 0.295);" type="number" min="0" oninput="validity.valid||(value='');">
                                         <p class="col" style="margin: 0 !important;">cm</p>
                                     </div>
                                 </div>
-                                <button type="button" class="btn btn-primary mt-3 w-100">Calculate</button>
+                                <button id="ellipse-btn" type="button" class="btn btn-primary mt-3 w-100">Calculate</button>
                             </div>
                         </div>
                     </div>
